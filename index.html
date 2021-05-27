@@ -14,9 +14,83 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>Hallo World</h1>
-      <button type="button" class="btn btn-primary">Primary</button>
+    <div class="app">
+      <div class="container">
+        <div class="weather">
+          <div class="search">
+            <div class="row">
+              <div class="col-9">
+                <input type="search" placeholder="Enter a city" />
+              </div>
+              <div class="col-3">
+                <input type="submit" class="btn btn-primary" value="Search" />
+              </div>
+            </div>
+          </div>
+
+          <div class="currentweather">
+            <div class="row">
+              <div class="col-6">
+                <h1>New York</h1>
+                <ul class="weatherdetails">
+                  <li>Thursday 13:01, clear sky</li>
+                  <li>Humidity: <span class="altcolour">76%</span></li>
+                  <li>Wind: <strong>0km/h</strong></li>
+                </ul>
+              </div>
+              <div class="col-6">21°C</div>
+            </div>
+          </div>
+
+          <div class="foecastweather row">
+            <div class="col">
+              <div class="weathereachday">
+                <div class="futureday">Thu</div>
+                <div class="future-temp">
+                  <span class="future-temp-max">21°C </span>
+                  <span class="future-temp-min">8°C </span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="weathereachday">
+                <div class="futureday">Fri</div>
+                <div class="future-temp">
+                  <span class="future-temp-max">21°C </span>
+                  <span class="future-temp-min">8°C </span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="weathereachday">
+                <div class="futureday">Sat</div>
+                <div class="future-temp">
+                  <span class="future-temp-max">21°C </span>
+                  <span class="future-temp-min">8°C </span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="weathereachday">
+                <div class="futureday">Sun</div>
+                <div class="future-temp">
+                  <span class="future-temp-max">21°C </span>
+                  <span class="future-temp-min">8°C </span>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="weathereachday">
+                <div class="futureday">Mon</div>
+                <div class="future-temp">
+                  <span class="future-temp-max">21°C </span>
+                  <span class="future-temp-min">8°C </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="src/app.js"></script>
   </body>
