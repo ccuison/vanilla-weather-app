@@ -14,79 +14,123 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <div class="app">
-      <div class="container">
-        <div class="weather">
-          <div class="search">
-            <div class="row">
-              <div class="col-9">
-                <input type="search" placeholder="Enter a city" />
+    <div id="root">
+      <div class="app">
+        <div class="container">
+          <div class="weather">
+            <form>
+              <div class="row">
+                <div class="col-9">
+                  <input
+                    type="search"
+                    placeholder="Enter a city"
+                    class="form-control search-input"
+                  />
+                </div>
+                <div class="col-3">
+                  <input
+                    type="submit"
+                    class="btn btn-primary w-100"
+                    value="Search"
+                  />
+                </div>
               </div>
-              <div class="col-3">
-                <input type="submit" class="btn btn-primary" value="Search" />
-              </div>
-            </div>
-          </div>
+            </form>
 
-          <div class="currentweather">
-            <div class="row">
-              <div class="col-6">
-                <h1>New York</h1>
-                <ul class="weatherdetails">
-                  <li>Thursday 13:01, clear sky</li>
-                  <li>Humidity: <span class="altcolour">76%</span></li>
-                  <li>Wind: <strong>0km/h</strong></li>
-                </ul>
+            <div class="currentweather">
+              <div class="row">
+                <div class="col-6">
+                  <h1>New York</h1>
+                  <ul class="weatherdetails">
+                    <li>Thursday 13:01, clear sky</li>
+                    <li>Humidity: <strong>76%</strong></li>
+                    <li>Wind: <strong>0km/h</strong></li>
+                  </ul>
+                </div>
+                <div class="col-6">
+                  <div class="future-temp">
+                    <div>
+                      <img
+                        src="image/rainbow.png"
+                        alt="rainbow"
+                        width="80px"
+                        padding="10px auto"
+                        class="rainbow"
+                      />
+                      <span class="temperature"> 23</span>
+                      <span class="unit">°C</span>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="col-6">21°C</div>
             </div>
-          </div>
 
-          <div class="foecastweather row">
-            <div class="col">
-              <div class="weathereachday">
-                <div class="futureday">Thu</div>
-                <div class="future-temp">
-                  <span class="future-temp-max">21°C </span>
-                  <span class="future-temp-min">8°C </span>
+            <div class="forecastweather row">
+              <div class="col">
+                <div class="weathereachday">
+                  <div class="futureday">Thu</div>
+                  <div class="weather-icon">
+                    <img src="image/rainbow.png" alt="rainbow" width="60px" />
+                  </div>
+                  <div class="future-temp">
+                    <span class="future-temp-max">21°C </span>
+                    <span class="future-temp-min">8°C </span>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col">
-              <div class="weathereachday">
-                <div class="futureday">Fri</div>
-                <div class="future-temp">
-                  <span class="future-temp-max">21°C </span>
-                  <span class="future-temp-min">8°C </span>
+              <div class="col">
+                <div class="weathereachday">
+                  <div class="futureday">Fri</div>
+                  <div class="weather-icon">
+                    <img src="image/cloud.png" alt="rainbow" width="60px" />
+                  </div>
+                  <div class="future-temp">
+                    <span class="future-temp-max">21°C </span>
+                    <span class="future-temp-min">8°C </span>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col">
-              <div class="weathereachday">
-                <div class="futureday">Sat</div>
-                <div class="future-temp">
-                  <span class="future-temp-max">21°C </span>
-                  <span class="future-temp-min">8°C </span>
+              <div class="col">
+                <div class="weathereachday">
+                  <div class="futureday">Sat</div>
+                  <div class="weather-icon">
+                    <img src="image/sun.png" alt="rainbow" width="60px" />
+                  </div>
+                  <div class="future-temp">
+                    <span class="future-temp-max">21°C </span>
+                    <span class="future-temp-min">8°C </span>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col">
-              <div class="weathereachday">
-                <div class="futureday">Sun</div>
-                <div class="future-temp">
-                  <span class="future-temp-max">21°C </span>
-                  <span class="future-temp-min">8°C </span>
+              <div class="col">
+                <div class="weathereachday">
+                  <div class="futureday">Sun</div>
+                  <div class="weather-icon">
+                    <img src="image/sun.png" alt="rainbow" width="60px" />
+                  </div>
+                  <div class="future-temp">
+                    <span class="future-temp-max">21°C </span>
+                    <span class="future-temp-min">8°C </span>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col">
-              <div class="weathereachday">
-                <div class="futureday">Mon</div>
-                <div class="future-temp">
-                  <span class="future-temp-max">21°C </span>
-                  <span class="future-temp-min">8°C </span>
+              <div class="col">
+                <div class="weathereachday">
+                  <div class="futureday">Mon</div>
+                  <div class="weather-icon">
+                    <img src="image/cloud.png" alt="rainbow" width="60px" />
+                  </div>
+                  <div class="future-temp">
+                    <span class="future-temp-max">21°C </span>
+                    <span class="future-temp-min">8°C </span>
+                  </div>
                 </div>
               </div>
+              <footer>
+                This project was coded by Camela Cuison and is
+                <a href="#"> open-sourced on Github</a> and
+                <a href="#">hosted on Netlify</a>
+              </footer>
             </div>
           </div>
         </div>
