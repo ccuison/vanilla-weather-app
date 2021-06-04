@@ -62,6 +62,10 @@ body {
   background: #885df1;
 }
 
+.icon {
+  margin-bottom: 30px;
+}
+
 .currentweather {
   margin-bottom: 5px;
 }
