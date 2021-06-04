@@ -1,3 +1,26 @@
+function formatDate(timestamp) {
+  let date = new Date(timestamp);
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let currentDay = days[date.getDay()];
+  let hours = date.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+  let minutes = date.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+  return `${currentDay}, ${hours}:${minutes} `;
+}
+
 function displayTemperature(response) {
   console.log(response);
   let cityElement = document.querySelector("#city");
@@ -14,6 +37,8 @@ function displayTemperature(response) {
   let speedElement = document.querySelector("#speed");
   let windSpeed = `${speed} km/h`;
   speedElement.innerHTML = windSpeed;
+  let dateElement = document.querySelector("#date");
+  dateElement.innerHTML = formatDate(response.data.dt * 1000);
 }
 
 let apiKey = "399e957e8f76382378f1ff5b0308246a";
