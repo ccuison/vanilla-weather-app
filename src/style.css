@@ -171,3 +171,17 @@ strong {
   color: rgba(39, 33, 66, 0.4);
   display: block;
 }
+
+.hyperlink {
+  text-decoration: none;
+}
+
+.future-temp .active {
+  color: rgba(39, 33, 66, 0.4);
+  cursor: default;
+  text-decoration: none;
+}
+
+.active .link {
+  text-decoration: none;
+}
