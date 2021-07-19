@@ -128,10 +128,6 @@ strong {
   text-transform: capitalize;
 }
 
-.weathereachday {
-  padding-left: 25px;
-}
-
 .futureday {
   font-size: 16px;
   line-height: 20px;
@@ -141,14 +137,12 @@ strong {
 
 .weather-icon {
   display: block;
-  margin: 5px auto;
-  padding-left: 15px;
+  text-align: center;
 }
 
 .future-temp-max {
   font-style: normal;
   font-size: 18px;
-  line-height: 1.5;
   color: #f65282;
   font-weight: 700;
 }
@@ -156,10 +150,8 @@ strong {
 .future-temp-min {
   font-style: normal;
   font-size: 18px;
-  line-height: 1.5;
   color: #f65282;
   font-weight: 700;
-  margin-left: 10px;
   opacity: 0.6;
 }
 
