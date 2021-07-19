@@ -90,3 +90,35 @@ celsiusLink.addEventListener("click", displayCelsiusTemperature);
 let celsiusTemperature = null;
 
 search("New York");
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = ` <div class ="row">`;
+  let days = ["Thur", "Fri", "Sat", "Sun", "Mon"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+                <div class="col-2">
+                  <div class="weathereachday">
+                    <div class="futureday">${day}</div>
+                    <div class="weather-icon">
+                      <img src="image/rainbow.png" alt="rainbow" width="60px" />
+                    </div>
+                    <div class="future-temp">
+                      <span class="future-temp-max">21°C </span>
+                      <span class="future-temp-min">8°C </span>
+                    </div>
+                  </div>
+                </div>
+    
+  `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+
+  forecastElement.innerHTML = forecastHTML;
+}
+
+displayForecast();
